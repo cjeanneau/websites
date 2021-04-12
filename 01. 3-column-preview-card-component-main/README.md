@@ -90,3 +90,7 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+
+**Note**
+My first website after self-learning of HTML & CSS on freecodecamp.org and Mozilla Developer Network
+Spending time : 3 hrs (not bad for a first site ;-)
