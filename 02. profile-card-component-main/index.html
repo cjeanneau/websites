@@ -1,128 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Frontend Mentor | Profile card component</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <head>
+    <meta charset="UTF-8">
+    <title>Frontend Mentor | Profile card component</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <!-- import font before CSS for better performance -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
     
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; vertical-align: bottom; }
+      .attribution a { color: hsl(228, 45%, 44%); }
 
-    * {
-    box-sizing: border-box;
-    
-    }
-
-    html {
-      font-family: 'Kumbh Sans', sans-serif;
-      font-size: 18px;
-      color: hsl(0, 0%, 59%);
-      font-weight: 400;
-    }
-
-    body {
-      /*width: 1440px;
-      height: 720px;
-      margin: 0;
-      position: relative;
-      /*background-position: -489px -489px;*/
-      background-color: #19a2ae;
-      background: 
-                  no-repeat -300px -489px url("images/bg-pattern-top.svg"),
-                  /*no-repeat 700px 400px url("images/bg-pattern-bottom.svg"),*/
-                  /*no-repeat -20vw -70vh url("images/bg-pattern-top.svg"),*/
-                  no-repeat 50vw 50vh url("images/bg-pattern-bottom.svg"),
-                  
-                  
-                  hsl(185, 75%, 39%);
-                  
-                  
-      /*linear-gradient(0deg, hsl(185, 75%, 39%), hsl(227, 10%, 46%));
-      /*background-image: url("images/bg-pattern-bottom.svg");
-      */
-
-    }
-    .profile-card {
-      width: 350px;
-      margin: 0 auto;
-      margin-top: 170px;
-      background: no-repeat url("images/bg-pattern-card.svg"),
-                  white;
-      border-radius: 15px;
-      padding-top: 90px;
-      text-align: center;
-            
+      /* My styles */
       
-    }
+      html {
+        font-size: 10px;
+        overflow: hidden;
+      }
+      body {
+        margin: 0;                
+      }
 
-    .profile-picture {
-      border: 4px solid white;
-      border-radius: 50%;
-      
-      /* Les 2 lignes suivantes permettent de centrer une image */
-      display: block; 
-      margin: 0 auto;     
-      
-    }
+      .container_full_screen {
+        width: 100vw;
+        height: 100vh;
+        background-color: hsl(185, 75%, 39%);;
+        display: flex;        
+      }
 
-    table {
-      table-layout: fixed;
-      width: 100%;
-      margin: 20px auto;
-      padding: 20px;
+      .container_full_screen::before {
+        content: '';
+        position:absolute;
+        height: 100vh;
+        width: 100vw;
+        /*background-size: auto;*/
+        background: no-repeat url("images/bg-pattern-top.svg") bottom right;
+        transform : translate(-50%, -50%);
+      }
 
-          
-    }
+      .container_full_screen::after {
+        content: '';
+        position:absolute;
+        height: 100vh;
+        width: 100vw;
+        background-size: auto;
+        background: no-repeat url("images/bg-pattern-bottom.svg") top left;
+        transform : translate(50%, 50%);
+      }
 
-    table tr:nth-child(2) {
+      .profile-card {
+        font-family: 'Kumbh Sans', sans-serif ;
+        font-size: 1.8rem;
+        letter-spacing: 0.5px; 
+        
+
+        text-align: center;
+        color: hsl(0, 0%, 59%);
+        margin: auto auto;
+        width: 350px;
+        background: no-repeat url("images/bg-pattern-card.svg") top center,
+                    white  ;        
+        border-radius: 1rem;
+        z-index: 1;        
+      }
+
+      .profile-picture {
+        border: 5px solid white;
+        border-radius: 50%;
+        
+        /* Les 2 lignes suivantes permettent de centrer une image */
+        display: block; 
+        margin: 0 auto;   
+        margin-top : 88px; 
+        margin-bottom: 20px  
+      }
+
+      table {
+        table-layout: fixed;
+        width: 100%;
+        margin: 0 auto;
+        padding: 24px;
+        padding-top : 25px;
+        padding-bottom: 22px;
+        
+        /*opacity: 0.3;*/          
+      }
+
+    table tr:nth-child(2) td {
       font-size: 10px;
+      padding-top: 3px;
     }
+    
+    
     strong {
       color: hsl(229, 23%, 23%);
-      font-weight: 700;
+      font-weight: 700;      
     }
 
-    hr {
-      color:hsl(0, 0%, 59%);
+    .city {
+      font-size: 1.4rem;
+      padding-bottom: 23px;
+      border-bottom: 1px solid hsl(0, 0%, 59%);
     }
 
+    p {
+      margin: 0;
+    }
 
+    .name { 
+      padding-bottom: 11px;
+      padding-top: 2px;
+    }
+    
+    
+    
 
-    .attribution { font-size: 11px; text-align: center; vertical-align: bottom; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    </style>
+  </head>
+
+  <body>
+      <div class="container_full_screen">
+        <div class="profile-card">
+          <img class="profile-picture" src="images/image-victor.jpg" alt="small picture of Victor">
+          <p class="name"><strong>Victor Crest</strong> 26</p>
+          <p class="city">London</p>
+          
+          <table>
+            <tr>
+              <td><strong>80K</strong></td>
+              <td><strong>803K</strong></td>
+              <td><strong>1.4K</strong></td>
+            </tr>
+            <tr>
+              <td>Followers</td>
+              <td>Likes</td>
+              <td>Photos</td>
+            </tr>
+          </table>
+        </div>  
+      </div>
+          
+      <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Cyril Jeanneau</a>.
+      </footer>
+    
   
-    <div class="profile-card">
-      <img class="profile-picture" src="images/image-victor.jpg" alt="small picture of Victor">
-      <p><strong>Victor Crest</strong> 26</p>
-      <p>London</p>
-      <hr noshade size=1>
-      <table>
-        <tr>
-          <td><strong>80K</strong></td>
-          <td><strong>803K</strong></td>
-          <td><strong>1.4K</strong></td>
-        </tr>
-        <tr>
-          <td>Followers</td>
-          <td>Likes</td>
-          <td>Photos</td>
-        </tr>
-      </table>
-    </div>  
-  
-  <!--
-    <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Cyril Jeanneau</a>.
-  </div>
--->
-  
-</body>
+    
+  </body>
 </html>
