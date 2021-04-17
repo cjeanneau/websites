@@ -1,204 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com"> 
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <script src="https://kit.fontawesome.com/8c2b6a6bd6.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8c2b6a6bd6.js" crossorigin="anonymous"></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    /*
-    # Front-end Style Guide
-    ## Layout
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /*
+      # Front-end Style Guide
+      ## Layout
 
-    The designs were created to the following widths:
-    - Mobile: 375px
-    - Desktop: 1440px
+      The designs were created to the following widths:
+      - Mobile: 375px
+      - Desktop: 1440px
 
-    ## Colors
-    - Violet: hsl(257, 40%, 49%)
-    - Soft Magenta: hsl(300, 69%, 71%)
+      ## Colors
+      - Violet: hsl(257, 40%, 49%)
+      - Soft Magenta: hsl(300, 69%, 71%)
 
-    ## Typography
-      ### Headings
+      ## Typography
+        ### Headings
 
-      - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
-      - Weights: 400, 600
-      font-family: 'Poppins', sans-serif;
+        - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+        - Weights: 400, 600
+        font-family: 'Poppins', sans-serif;
 
-      ### Body
+        ### Body
 
-      - Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
-      - Weights: 400
-      font-family: 'Open Sans', sans-serif;
+        - Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+        - Weights: 400
+        font-family: 'Open Sans', sans-serif;
 
-    ## Icons
+      ## Icons
 
-    For the social icons, you can use a font icon library. I use the one below:
+      For the social icons, you can use a font icon library. I use the one below:
 
-    - [Font Awesome](https://fontawesome.com/)
+      - [Font Awesome](https://fontawesome.com/)
 
-    */
+      */
 
-    * {
-      box-sizing: border-box; /* Margin, border and padding included in box sizing. */
-      margin: 0;              /* We reset all margin */
-      padding: 0;             /* and padding to 0 */
-    }
+      /* I restart it from scratch to include display:flex */
+      
+      * {
+        box-sizing: border-box; /* Margin, border and padding included in box sizing. */
+        margin: 0;              /* We reset all margin */
+        padding: 0;             /* and padding to 0 */
+        /*border: 1px solid royalblue;*/
+      }
 
 
-    html {      
-      font-size: 10px; /* I set it to 10px to make easier the font-size using em/rem */
-      color: white;    /* Set the font to white (this includes the icons !) */ 
-      height: 100%;
-    }
+      html {      
+        font-size: 10px; /* I set it to 10px to make easier the font-size using em/rem */
+        color: white;    /* Set the font to white (this includes the icons !) */ 
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+      }
 
-    body {      
+      body { 
+      width: 100%;
+      height: 100%;     
       background: url("images/bg-desktop.svg") no-repeat,
                 hsl(257, 40%, 49%);
-      background-size: auto;  
-      overflow: hidden;
       
-      margin: 72px; /*margin right/left : OK*/
-      margin-top: 50px;
+      display: flex;
+      flex-direction: column; 
+      }
       
-      height: 710px; /* A Ajuster ou effacer*/
+      /* Typo */
+
+      article {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+
+      h2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 4rem;
+      }
+
+      .register_button {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.8rem;
+        text-decoration: none;
+        padding: 15px 64px;
+        border: 1px solid black;
+        border-radius: 28px;
+        background: white;
+        color: hsl(257, 40%, 49%);  
           
-    }
-    
-    .logo_huddle {
-      width: 15vw;
+      }
 
-    }
-    header {
-      margin-bottom: 85px;
-    }
-    main {
+      /*.fab {      
+        border: 2px solid white;
+        color: white;
+        border-radius: 50%;
+        font-size: 1.8rem;
+        line-height: 3.6rem;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      */
+
+      .fab {
+        color: white;
+        font-size: 1.8rem;
+        line-height: 3.6rem;
+      }
+
+      /* Layout */
+
+      body {
+        display: flex;
+        flex-direction: column;
+
+        padding: 72px; /*margin right/left : OK*/
+        padding-top: 50px;
+        padding-bottom: 0;
+      }
       
-    }
-    .mockup {
-      width: 54.7%;
-      float: left;
-    }
+      .logo_huddle {
+        max-width: 215px;
+        padding-bottom: 85px;
+      }
 
-    article {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1.8rem;
-      font-weight: 400;
-      line-height: 1.5;
-      padding-right: 7px;
-      width: 41%;
-      float: right;      
-    }
 
-    article p {
-      padding-bottom: 3.8rem;;
-    }
+      /*
+      main {
+        display: flex;
+        flex-wrap: wrap; 
 
-    h2 {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      font-size: 4rem;
-      margin-top: 4.4rem;
-      padding-bottom: 1.9rem;
-    }
+      }
 
-    .register_button {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.8rem;
-      text-decoration: none;
-      padding: 15px 64px;
-      border: 1px solid black;
-      border-radius: 28px;
-      background: white;
-      color: hsl(257, 40%, 49%);
+      main> *{
+        flex:1 0 300px;
+      }
+
+      .mockup {
+        flex-grow: 1;
+      }
+      main img {
+        max-width: 110%;
+      }
+      */
+
+      main {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        /* I lost so much time to display the main content. I first tried with floating box. It was working fine up to i realize
+        that flex will be better for my entire page. 
+        I struggle with flex and flex wrap on main and his children and finally find "probably" the best solution using grid! */
+        margin-bottom: 20px;
+
+      }
+      main img {
+        max-width: 100%; /* This line to make the image adjustable*/
+      }
+
+      article h2 {
+        padding-top: 4.4rem;
+        padding-bottom: 1.9rem;
+      }
+      article p {
+        padding-bottom: 3.8rem;
+      }
+
+      .icons_social_network {
+              
+      }
       
+      .icons_social_network > div {
+    float: right;
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
     }
-
-    a {
-      
-    }
-
-    .icon_social_network {      
-      border: 2px solid white;
-      color: white;
-      border-radius: 50%;
-      font-size: 1.8rem;
-      line-height: 3.6rem;
-      width: 40px;
-      height: 40px;
-      text-align: center;
-      vertical-align: middle;
-      display: inline-block;
 
       
-             
-    }
-
-    footer {
-      column-count: 3;
-      column-gap: 40px;
-      position: absolute;
-      right: 72px;
-      bottom: 40px;
       
       
 
-    }
-    
-    
-    
     
 
-   
-
-    .attribution { font-size: 11px; text-align: center; margin-bottom: 2px; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <header>
-    <img  class="logo_huddle" 
-          src="images/logo.svg" 
-          alt="le logo d'Huddle composé d'une bulle de conversaation avec 3 points suivi du nom"
-    >
-  </header>    
-  
-  <main>
-    <img class="mockup" src="images/illustration-mockups.svg">
-    <article>
-      <h2>Build The Community Your Fans Will Love</h2>
-
-      <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p> 
-
-      <a class="register_button" href="#">Register</a> 
-    </article>
-  </main> 
-
-<!--
-  <footer>
-    <i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i>
-  </footer>
--->
-  <footer>
-    <a href="https://facebook.com" class="icon_social_network"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://twitter.com" class="icon_social_network"><i class="fab fa-twitter"></i></a>
-    <a href="https://instagram.com" class="icon_social_network"><i class="fab fa-instagram"></i></a>
+      .attribution { font-size: 11px; text-align: center; padding: 14px 0; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img  class="logo_huddle" 
+            src="images/logo.svg" 
+            alt="le logo d'Huddle composé d'une bulle de conversaation avec 3 points suivi du nom"
+      >
+    </header>    
     
-  </footer>
-<!--  
-  <p class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </p>
--->
-</body>
+    <main>
+      <div class="mockup"><img  src="images/illustration-mockups.svg" alt="mockup picture"></div>
+      <article>
+        <h2>Build The Community Your Fans Will Love</h2>
+
+        <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p> 
+
+        <a class="register_button" href="#">Register</a> 
+      </article>
+    </main> 
+
+
+    <div class="icons_social_network">
+      <div><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></div>
+      <div><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></div>
+      <div><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></div>
+      
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Cyril Jeanneau</a>.
+      </p>
+    </footer> 
+  </body>
 </html>
