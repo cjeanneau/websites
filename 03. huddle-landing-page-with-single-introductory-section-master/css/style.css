@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box; /* Margin, border and padding included in box sizing. */
+    margin: 0;              /* We reset all margin */
+    padding: 0;             /* and padding to 0 */        
+  }
+
+
+  html {      
+    font-size: 10px; /* I set it to 10px to make easier the font-size using em/rem */
+    color: white;    /* Set the font to white (this includes the icons !) */ 
+    height: 100vh;
+    width: 100vw;
+    max-width: 1440px;
+    overflow: hidden;
+  }
+
+  body { 
+  width: 100%;
+  height: 100%;     
+  background: url("images/bg-desktop.svg") no-repeat,
+            hsl(257, 40%, 49%);
+  display: flex;
+  flex-direction: column; 
+  }
+  
+  /* Typo */
+
+  article {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+  }
+
+  .register_button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 15px 64px;
+    border: 1px solid black;
+    border-radius: 28px;
+    background: white;
+    color: hsl(257, 40%, 49%);  
+      
+  }
+
+  .fab {
+    color: white;
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+  }
+
+  /* Layout */
+
+  body {
+    display: flex;
+    flex-direction: column;
+
+    padding: 72px; /*margin right/left : OK*/
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+  
+  .logo_huddle {
+    max-width: 215px;
+    padding-bottom: 85px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 55% 40%;
+    column-gap: 50px;      
+          
+    /* I lost so much time to display the main content. I first tried with floating box. It was working fine up to i realize
+    that flex will be better for my entire page. 
+    I struggle with flex and flex wrap on main and his children and finally find "probably" the best solution using grid! */
+    margin-bottom: 20px;
+  }
+
+  main img {
+    max-width: 100%; /* This line to make the image adjustable*/
+  }
+  
+  article h2 {
+    padding-top: 4.4rem;
+    padding-bottom: 1.9rem;
+  }
+
+  article p {
+    padding-bottom: 3.8rem;
+  }
+     
+  .icons_social_network > div {
+    float: right;
+    height: 40px;
+    width: 40px;
+    margin: 0 8px;
+    border: 2px solid white;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+@media screen and (max-width: 1200px) {
+  html {
+    overflow: auto;
+  }
+
+  main {
+    display: block;        
+  }
+
+  .icons_social_network {
+    margin: 0 auto;
+  }
+
+  article {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+} 
+
+@media screen and (max-width: 375px) {
+  body {
+    background: url("images/bg-mobile.svg") no-repeat,
+            hsl(257, 40%, 49%);
+    padding: 36px; /*margin right/left : OK*/
+    padding-top: 36px;
+    padding-bottom: 0;
+  }
+
+  .logo_huddle {
+    max-width: 125px;
+    padding-bottom: 55px;
+  }
+
+  article h2 {
+    font-size: 2.4rem;
+  }
+  article p {
+    font-size: 1.6rem;
+  }
+}
+  .attribution { font-size: 11px; text-align: center; padding: 14px 0; }
+  .attribution a { color: hsl(228, 45%, 44%); }
