@@ -63,6 +63,7 @@
         color: white;    /* Set the font to white (this includes the icons !) */ 
         height: 100vh;
         width: 100vw;
+        max-width: 1440px;
         overflow: hidden;
       }
 
@@ -161,16 +162,21 @@
 
       main {
         display: grid;
-        grid-template-columns: 60% 40%;
+        grid-template-columns: 55% 40%;
+        column-gap: 50px;      
+        
+        
         /* I lost so much time to display the main content. I first tried with floating box. It was working fine up to i realize
         that flex will be better for my entire page. 
         I struggle with flex and flex wrap on main and his children and finally find "probably" the best solution using grid! */
         margin-bottom: 20px;
 
+
       }
       main img {
         max-width: 100%; /* This line to make the image adjustable*/
       }
+      
 
       article h2 {
         padding-top: 4.4rem;
@@ -180,10 +186,7 @@
         padding-bottom: 3.8rem;
       }
 
-      .icons_social_network {
-              
-      }
-      
+         
       .icons_social_network > div {
     float: right;
     height: 40px;
@@ -194,7 +197,46 @@
     text-align: center;
     }
 
+    @media screen and (max-width: 1200px) {
+      html {
+        overflow: auto;
+      }
+
+      main {
+        display: block;        
+      }
+
+      .icons_social_network {
+        margin: 0 auto;
+      }
+
+      article {
+        text-align: center;
+        margin-bottom: 50px;
+      }
       
+    } 
+    
+    @media screen and (max-width: 375px) {
+      body {
+        background: url("images/bg-mobile.svg") no-repeat,
+                hsl(257, 40%, 49%);
+        padding: 36px; /*margin right/left : OK*/
+        padding-top: 36px;
+        padding-bottom: 0;
+      }
+      .logo_huddle {
+        max-width: 125px;
+        padding-bottom: 55px;
+      }
+
+      article h2 {
+        font-size: 2.4rem;
+      }
+      article p {
+        font-size: 1.6rem;
+      }
+    }
       
       
 
@@ -225,9 +267,10 @@
 
 
     <div class="icons_social_network">
-      <div><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></div>
-      <div><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></div>
+           
       <div><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></div>
+      <div><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></div>
+      <div><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></div>
       
     </div>
     <footer>
