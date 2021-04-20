@@ -49,6 +49,12 @@
     color: hsl(257, 40%, 49%);  
       
   }
+  
+  .register_button:hover {
+      color: white;
+      background: hsl(300, 69%, 71%);
+      order: 1px solid hsl(257, 40%, 49%);
+  }
 
   .fab {
     color: white;
@@ -105,6 +111,14 @@
     border-radius: 50%;
     text-align: center;
   }
+  .icons_social_network div:hover {
+      border: 2px solid hsl(300, 69%, 71%);
+  }
+
+  .fab:hover {
+      color:hsl(300, 69%, 71%);
+  }
+
 
 @media screen and (max-width: 1200px) {
   html {
@@ -122,6 +136,10 @@
   article {
     text-align: center;
     margin-bottom: 50px;
+  }
+
+  a:hover {
+
   }
   
 } 
