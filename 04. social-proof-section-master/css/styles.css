@@ -36,6 +36,129 @@ White: hsl(0, 0%, 100%)
 
 /* Typography */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    background: url("../images/bg-pattern-top-desktop.svg") no-repeat,
+                url("../images/bg-pattern-bottom-desktop.svg") no-repeat 360px bottom;
+}
+
+body {
+    width: 1110px;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 68px;
+}
+
+/* Section 1 */
+
+.description {
+    width: 424px;
+    height: 235px; 
+}
+
+.description h2 {
+    color: hsl(300,43%, 22%); 
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+}
+.description p {
+    color: hsl(303, 10%, 53%);
+    line-height: 1.6rem;   
+    padding-top: 1rem;
+    letter-spacing: -0.5px;
+}
+
+
+.rates {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.five_stars {
+    width: 440px;
+    height: 55px;
+    align-items: center;
+    background: url("../images/icon-star.svg") no-repeat left 32px center,
+                url("../images/icon-star.svg") no-repeat left 57px center,
+                url("../images/icon-star.svg") no-repeat left 82px center,
+                url("../images/icon-star.svg") no-repeat left 107px center,
+                url("../images/icon-star.svg") no-repeat left 132px center,                
+                hsl(300, 24%, 96%);
+    border-radius: 8px;
+    color:hsl(300, 43%, 22%);
+    font-size: 0.8em;
+    font-weight: bold;
+    line-height: 55px;
+    padding-left: 180px;    
+}
+
+.five_stars.two {
+    margin-left: 50px;
+}
+
+.five_stars.three {
+    margin-left: 100px;
+}
+
+/* Section 2 */
+
+.reviewer {
+    width: 350px;
+    height: 234px;
+    background-color:hsl(300, 43%, 22%);
+    color: white;
+    padding: 40px 32px;
+    border-radius: 8px;
+    font-size: 0.8rem;    
+}
+
+.reviewer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 1.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.reviewer h3 {
+    font-size: 0.8rem;
+    line-height: 1.6rem;;
+    font-weight: 700;
+}
+
+.reviewer h4{
+    font-weight: 400;
+    color:hsl(333, 80%, 67%);    
+}
+
+.reviewer p {
+    padding-top: 2rem;
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+}
+
+.reviewer.two {
+    margin-top: 1rem;
+}
+
+.reviewer.three {
+    margin-top: 2rem;
+}
 
 
 .attribution {
@@ -43,5 +166,5 @@ White: hsl(0, 0%, 100%)
    text-align: center;
 }
 .attribution a {
-   color: hsl(228, 45%, 44%);
+   color: hsl(300,43%, 22%)
 }
