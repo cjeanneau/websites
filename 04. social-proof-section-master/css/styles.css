@@ -173,7 +173,7 @@ section {
 
 
 
-@media screen and (max-width: 1150px) {
+@media (max-width: 1150px) {
     section {
         display: flex;
         flex-wrap: wrap;
@@ -206,7 +206,7 @@ section {
 
 }
 
-@media screen and (max-width: 1110px) {
+@media (max-width: 1110px) {
     .reviewer {
         margin-top: 16px;
     }
@@ -216,7 +216,7 @@ section {
 }
 
 
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
     html {
         background: url("../images/bg-pattern-top-mobile.svg") no-repeat;
     }
