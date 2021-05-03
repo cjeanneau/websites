@@ -41,15 +41,12 @@ body {
     font-family: 'Karla', sans-serif;
     font-size: 16px;
     background-color: hsl(204, 43%, 93%);
-
     display: flex;
     align-items: center;
     justify-content: center;
-    
     margin: 0;
     min-height: 100vh;
     padding: 20px;
-
 }
 
 main {
@@ -59,13 +56,11 @@ main {
     margin: auto;
     border-radius: 0.5rem;
     overflow: hidden; /* Gère le depassement de la dernière section dans main pour le border-radius */
-    box-shadow: 0 5px 10px 10px rgba(0,0,0, 0.05);
-    
+    box-shadow: 0 5px 10px 10px rgba(0,0,0, 0.05);    
 }
 
 section {
     padding: 40px;
-
 }
 
 .subscription {
@@ -75,7 +70,6 @@ section {
 .why {
     background-color: hsla(179, 62%, 43%, 0.8);
     color: #fff;
-
 }
 
 .row {
@@ -104,16 +98,14 @@ h2 {
 .light-black {
     color: hsl(218, 22%, 67%);
     line-height: 1.6rem;
-
 }
-
-
 
 .row p {
     display: flex;
     padding: 0.5rem 0;
 }
-.price{
+
+.price {
     color: #fff;
     font-size: 2rem;
     margin-right: 1rem;
@@ -141,14 +133,13 @@ button {
     font-size: 1rem;
     color: #fff;
     text-align: center;
-
-
 }
 
 .why h2 {
     padding-top: 0.1rem;
     padding-bottom: 1.1rem;
 }
+
 ul {
     list-style-type: none;
     opacity: 0.7;
@@ -169,64 +160,4 @@ ul li {
     .light-black {
         display: inline;
     }
-
-
-
-
-
-
-
-/*.container {
-    display: grid;
-      
 }
-
-.container>div {
-    display: flex;
-    max-width: 311px;
-}
-
-.join {
-    background-color: white;
-    color: hsl(218, 22%, 67%);
-    font-weight: normal;
-    padding: 1.5rem;
-}
-
-.join h2 {
-    color: hsl(179, 62%, 43%);
-    font-size: 1.2rem;
-    font-weight: bold;
-    
-}
-.join p:first-of-type {
-    color: hsl(71, 73%, 54%);
-}
-
-.join p {
-    padding-top: 1.5rem;
-}
-
-.subscription {
-    background-color: hsl(179, 62%, 43%);
-    color: white;
-    padding: 1.5rem;
-}
-
-.subscription a {
-    text-align: center;    
-    padding: 10px 100px;   
-    background-color:hsl(71, 73%, 54%);
-    color: white;
-    text-decoration: none;
-}
-
-.why {
-    background-color: hsla(179, 62%, 43%, 0.8);
-    color: white;
-}
-
-.why p {
-    opacity: 0.8;
-}
-*/
