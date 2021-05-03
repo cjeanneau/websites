@@ -1,0 +1,232 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    min-height: 100vh;
+    padding: 20px;
+
+}
+
+main {
+    background-color: white;
+    max-width: 640px;
+    width: 640px;
+    margin: auto;
+    border-radius: 0.5rem;
+    overflow: hidden; /* Gère le depassement de la dernière section dans main pour le border-radius */
+    box-shadow: 0 5px 10px 10px rgba(0,0,0, 0.05);
+    
+}
+
+section {
+    padding: 40px;
+
+}
+
+.subscription {
+    background-color: hsl(179, 62%, 43%);
+    color: #fff; 
+}
+.why {
+    background-color: hsla(179, 62%, 43%, 0.8);
+    color: #fff;
+
+}
+
+.row {
+    display: flex;
+}
+
+.row > section {
+    flex: 1;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);   
+    padding-bottom: 1.6rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding-bottom: 0.7rem;    
+}
+
+.yellow_text {
+    color: hsl(71, 73%, 54%);
+}
+
+.light-black {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.6rem;
+
+}
+
+
+
+.row p {
+    display: flex;
+    padding: 0.5rem 0;
+}
+.price{
+    color: #fff;
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.monthly {
+    opacity: 0.7;
+    align-self: center;
+}
+
+.full-access {
+    margin-top: -0.6rem;
+    margin-bottom: 1.4rem; 
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 5px 10px 10px rgba(0,0,0, 0.05);
+    width: 100%;
+    padding: 0.9rem 0;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+
+
+}
+
+.why h2 {
+    padding-top: 0.1rem;
+    padding-bottom: 1.1rem;
+}
+ul {
+    list-style-type: none;
+    opacity: 0.7;
+    padding: 0;
+    font-size: 0.85rem;
+    
+}
+
+ul li {
+    line-height: 1.3rem;
+}
+
+@media screen and (max-width: 500px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .light-black {
+        display: inline;
+    }
+
+
+
+
+
+
+
+/*.container {
+    display: grid;
+      
+}
+
+.container>div {
+    display: flex;
+    max-width: 311px;
+}
+
+.join {
+    background-color: white;
+    color: hsl(218, 22%, 67%);
+    font-weight: normal;
+    padding: 1.5rem;
+}
+
+.join h2 {
+    color: hsl(179, 62%, 43%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+.join p:first-of-type {
+    color: hsl(71, 73%, 54%);
+}
+
+.join p {
+    padding-top: 1.5rem;
+}
+
+.subscription {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    padding: 1.5rem;
+}
+
+.subscription a {
+    text-align: center;    
+    padding: 10px 100px;   
+    background-color:hsl(71, 73%, 54%);
+    color: white;
+    text-decoration: none;
+}
+
+.why {
+    background-color: hsla(179, 62%, 43%, 0.8);
+    color: white;
+}
+
+.why p {
+    opacity: 0.8;
+}
+*/
