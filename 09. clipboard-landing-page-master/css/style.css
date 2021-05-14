@@ -52,6 +52,7 @@ html {
     align-items: center;
     font-family: 'Bai Jamjuree', sans-serif;
     font-size: 18px;
+    background-color:hsl(210, 10%, 33%);
     
 }
 
@@ -63,6 +64,7 @@ body {
     text-align: center;  
     background: no-repeat url("../images/bg-header-mobile.png");
     background-size: 100%; 
+    background-color: white;
 }
 
 img {
@@ -273,9 +275,121 @@ footer picture img {
     gap: 40px;
     margin: 0 auto;
     padding: 24px 0;
-    
 }
+
 .social_networks img {
     width: 24px;
-
 }
+
+@media (min-width:640px) {
+    p {
+        font-size: 1rem;
+        letter-spacing: 0.15px;
+    }
+
+    .section1 p {
+        font-size: 1.1rem;
+        letter-spacing: 0.1px;
+    }
+
+    .snippets p, .tools p {
+        font-size: 0.9rem;
+        
+    }
+
+    h1 {
+        font-size: 2.47rem;
+    }
+
+    h2 {
+        font-size: 1.94rem;
+    }
+
+    section {
+        max-width: 730px;
+        margin: 0 auto;
+    }
+
+    header {
+        margin-top: 130px;        
+    }
+
+    .section1 {
+        margin-top: 52px;
+    }
+
+    .download_buttons {
+        display: inline-block;
+
+
+    }
+
+    button {
+        width: 227px;
+        margin: 0 6px;
+        letter-spacing: 1px;
+    }
+
+    .section3 {
+        margin: 0;
+        display: flex;
+        vertical-align: middle;
+        width: 100%;
+        max-width: 100%;
+        align-content: center;
+        align-self: center;
+        gap: 77px;
+
+        
+        
+    }
+    
+    .pic_computer {
+        position: relative;
+        max-width: 752px;
+        width: 100%;
+        right: 33px;
+              
+
+    }
+
+    .snippets {
+        position: relative;
+        text-align: left;
+        max-width: 25%;
+    }
+
+    #pic_devices {
+        margin: 0 auto;
+        max-width: 930px;   
+    }
+
+    .section5 {
+        max-width: 1440px;
+    }
+    .tools {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 1440px;
+        gap: 20px;
+    }
+
+    .tools article {
+        width: 360px;
+    }
+
+    .section6 {
+        max-width: 1110px;
+        
+    }
+
+    .companies {
+        padding: 0;
+        gap: 0;
+        justify-content: space-between;
+    }
+    .companies a {
+        
+        margin: 0;
+    }

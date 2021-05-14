@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+   .second_part {
+        
+        display: flex;
+    }
+    .pic_computer, .snippets{
+        border: 2px solid grey;
+        /*display:inline-block;*/
+        vertical-align: middle;
+    }
+    
+    .pic_computer {
+        border: 2px solid red;
+        position: relative;
+        right: 30%;
+    }
+
+    .snippets {
+        position: relative;
+        max-width: 40%;
+    }
+
+    .container {
+        position: relative;
+        display: flex;
+        border: 2px solid red;
+       
+    }
+
+    .img_devices {
+        border: 2px solid green;
+        width: 100%;
+    }
+  
+
+    
+</style>
+</head>
+<body>
+    <main>
+        <div class="second_part">
+        
+            
+              <picture class="pic_computer">
+                <img src="images/image-computer.png" alt="An Apple Cinema Display">
+              </picture>
+            
+    
+            <div class="snippets">
+                <article>
+                    <h3>
+                      Quick Search
+                    </h3>
+                    <p id="p_quick">
+                      Easily search your snippets by content, category, web address, application, and more.
+                    </p>
+                </article> 
+            </div>
+        </div>  
+
+        <div class="container">
+            <picture class="pic_devices">
+                <img class="img_devices" src="images/image-devices.png" alt="">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>
