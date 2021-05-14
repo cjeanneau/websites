@@ -17,198 +17,229 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(210, 10%, 33%);}
   </style>
 </head>
 <body>
-  <main>
-    <picture>
+  
+  <header>
+    <picture class="logo_header">
       <img src="images/logo.svg" alt="The green logo of the company : a C in a circle.">
     </picture>
+  </header>
 
-    <article>
-      <h1>
-        A history of everything you copy
-      </h1>
-      <p>
-        Clipboard allows you to track and organize everything you 
-        copy. Instantly access your clipboard on all your devices.
-      </p>
-    </article>
-
-    <button>
-      Download for iOS
-    </button>
-
-    <button>
-      Download for Mac
-    </button>
-
-    <article>
-      <h2>
-        Keep track of your snippets
-      </h2>
-      <p>
-        Clipboard instantly stores any item you copy in the cloud, 
-        meaning you can access your snippets immediately on all your 
-        devices. Our Mac and iOS apps will help you organize everything.
-      </p>
-    </article>
-
-    <picture>
-      <img src="images/image-computer.png" alt="An Apple Cinema Display">
-    </picture>
-
-    <article>
-      <h3>
-        Quick Search
-      </h3>
-      <p>
-        Easily search your snippets by content, category, web address, application, and more.
-      </p>
-    </article>  
-
-    <article>
-      <h3>
-        iCloud Sync
-      </h3>
-      <p>
-        Instantly saves and syncs snippets across all your devices.
-      </p>
-    </article>
-
-    <article>
-      <h3>
-        Complete History
-      </h3>
-      <p>
-        Retrieve any snippets from the first moment you started using the app.        
-      </p>
-    </article>
-
-    <article>
-      <h2>
-        Access Clipboard anywhere
-      </h2>
-      <p>
-        Whether you’re on the go, or at your computer, you can access all your Clipboard
-        snippets in a few simple clicks.
-      </p>
-    </article>
-
-    <picture>
-      <img src="images/image-devices.png" alt="Iphone and ipad side-by-side">
-    </picture>
-
-    <article>
-      <h2>
-        Supercharge your workflow
-      </h2>
-      <p>
-        We’ve got the tools to boost your productivity.
-      </p>
-    </article>
-
-    <article>
-      <picture>
-        <img src="images/icon-blacklist.svg" alt="Icon of a written page">
-      </picture>
-      <h3>
-        Create blacklists
-      </h3>
-      <p>
-        Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
-      </p>
-    </article>
+  <main>
+    <section class="section1">
+     <article>        
+        <h1>
+          A history of everything you copy
+        </h1>
+        
+        <p>
+          Clipboard allows you to track and organize everything you 
+          copy. Instantly access your clipboard on all your devices.
+        </p>
+      </article>
     
-    <article>
-      <picture>
-        <img src="images/icon-text.svg" alt="Icon of an uppercase letter A followed by the cursor">
-      </picture>
-      <h3>
-        Plain text snippets
-      </h3>
-      <p>
-        Remove unwanted formatting from copied text for a consistent look.
-      </p>
-    </article>
+      <div class="download_buttons">
+        <button class="ios_button">
+          Download for iOS
+        </button>
 
-    <article>
-      <picture>
-        <img src="images/icon-preview.svg" alt="Icon a an eye">
-      </picture>
-      <h3>
-        Sneak preview
-      </h3>
-      <p>
-        Quick preview of all snippets on your Clipboard for easy access.
-      </p>
-    </article>
+        <button class="mac_button">
+          Download for Mac
+        </button>
+      </div>
 
-    <picture>
-      <img src="images/logo-google.png" alt="Logo of Google">
+    </section>
+
+    <section class="section2">
+      <article>
+        <h2>
+          Keep track of your snippets
+        </h2>
+
+        <p>
+          Clipboard instantly stores any item you copy in the cloud, 
+          meaning you can access your snippets immediately on all your 
+          devices. Our Mac and iOS apps will help you organize everything.
+        </p>
+      </article>   
+    </section> 
+
+    <section class="section3">
+        <picture class="pic_computer">
+          <img src="images/image-computer.png" alt="An Apple Cinema Display">
+        </picture>
+        
+        <div class="snippets">
+          <article>
+            <h3>
+              Quick Search
+            </h3>
+            <p id="p_quick">
+              Easily search your snippets by content, category, web address, application, and more.
+            </p>
+          </article>  
+
+          <article>
+            <h3>
+              iCloud Sync
+            </h3>
+            <p id="p_sync">
+              Instantly saves and syncs snippets across all your devices.
+            </p>
+          </article>
+
+          <article>
+            <h3>
+              Complete History
+            </h3>
+            <p id="p_history">
+              Retrieve any snippets from the first moment you started using the app.        
+            </p>
+          </article>
+        </div>
+      </div>  
+    </section>
+
+    <section class="section4">
+      <article>
+        <h2>
+          Access Clipboard anywhere
+        </h2>
+        <p>
+          Whether you’re on the go, or at your computer, you can access all your Clipboard
+          snippets in a few simple clicks.
+        </p>
+      </article>
+
+      
+    </section>
+    <picture id="pic_devices">
+      <img class="img_devices" src="images/image-devices.png" alt="Iphone and ipad side-by-side">
     </picture>
 
-    <picture>
-      <img src="images/logo-ibm.png" alt="Logo of IBM">
-    </picture>
+    <section class="section5">
+      <article>
+        <h2>
+          Supercharge your workflow
+        </h2>
+        <p class="p_supercharge">
+          We’ve got the tools to boost your productivity.
+        </p>
+      </article>
 
-    <picture>
-      <img src="images/logo-microsoft.png" alt="Logo of Microsoft">
-    </picture>
+      <div class="tools">
+        <article>
+          <picture>
+            <img src="images/icon-blacklist.svg" alt="Icon of a written page">
+          </picture>
+          <h3>
+            Create blacklists
+          </h3>
+          <p>
+            Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+          </p>
+        </article>
+        
+        <article>
+          <picture>
+            <img src="images/icon-text.svg" alt="Icon of an uppercase letter A followed by the cursor">
+          </picture>
+          <h3 class="h3_plain">
+            Plain text snippets
+          </h3>
+          <p>
+            Remove unwanted formatting from copied text for a consistent look.
+          </p>
+        </article>
 
-    <picture>
-      <img src="images/logo-hp.png" alt="Logo of Hewlett Packard">
-    </picture>
+        <article>
+          <picture>
+            <img src="images/icon-preview.svg" alt="Icon a an eye">
+          </picture>
+          <h3 class="h3_sneak">
+            Sneak preview
+          </h3>
+          <p>
+            Quick preview of all snippets on your Clipboard for easy access.
+          </p>
+        </article>
+      </div>
+    </section>
+    <section class="section6">
+      <div class="companies">
+        <a href="https://www.google.com">
+          <img src="images/logo-google.png" alt="Logo of Google">
+        </a>
 
-    <picture>
-      <img src="images/logo-vector-graphics.png" alt="Logo of Vector Graphics">
-    </picture>
+        <a href="#">
+          <img src="images/logo-ibm.png" alt="Logo of IBM">
+        </a>
 
-    <article>
-      <h2>
-        Clipboard for iOS and Mac OS      
-      </h2>
-      <p>
-        Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
-        and you’re ready to start adding to your clipboard.
-      </p>
-    </article>
+        <a href="#">
+          <img src="images/logo-microsoft.png" alt="Logo of Microsoft">
+        </a>
 
-    <button>
-      Download for iOS
-    </button>
-    <button>
-      Download for Mac
-    </button>
+        <a href="#">
+          <img src="images/logo-hp.png" alt="Logo of Hewlett Packard">
+        </a>
 
-    <footer>
-      <picture>
-        <img src="images/logo.svg" alt="The green logo of the company : a C in a circle.">
-      </picture>
-      <a href="#">FAQs</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Press Kit</a>
-      <a href="#">Install Guide</a>
-      <picture>
-        <img src="images/icon-facebook.svg" alt="Facebook icon">
-      </picture>
-      <picture>
-        <img src="images/icon-twitter.svg" alt="Twitter icon">
-      </picture>
-      <picture>
-        <img src="images/icon-instagram.svg" alt="Instagram icon">
-      </picture>
-    </footer>
+        <a href="#">
+        <img src="images/logo-vector-graphics.png" alt="Logo of Vector Graphics">
+      </a>
+      </div>
+    </section>
+
+    <section class="section7">
+      <article>
+        <h2>
+          Clipboard for iOS and Mac OS      
+        </h2>
+        <p>
+          Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
+          and you’re ready to start adding to your clipboard.
+        </p>
+      </article>
+
+      <div class="download_buttons">
+        <button class="ios_button">
+          Download for iOS
+        </button>
+        <button class="mac_button">
+          Download for Mac
+        </button>
+      </div>
+    </section>    
 
   </main>
 
   <footer>
+    <picture>
+      <img src="images/logo.svg" alt="The green logo of the company : a C in a circle.">
+    </picture>
+    <a href="#">FAQs</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Press Kit</a>
+    <a href="#">Install Guide</a>
+    
+    <div class="social_networks">
+      <a href="https://www.facebook.com">
+        <img src="images/icon-facebook.svg" alt="Facebook icon">
+      </a>
+      <a href="https://www.twitter.com">
+        <img src="images/icon-twitter.svg" alt="Twitter icon">
+      </a>
+      <a href="https://www.instagram.com">
+        <img src="images/icon-instagram.svg" alt="Instagram icon">
+      </a>
+    </div>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Cyril Jeanneau</a>.
     </p>
   </footer>
-</body>
+ </body>
 </html>

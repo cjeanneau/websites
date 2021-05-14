@@ -1,0 +1,296 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Strong Cyan: hsl(171, 66%, 44%)
+- Light Blue: hsl(233, 100%, 69%)
+
+### Neutral
+
+- Dark Grayish Blue: hsl(210, 10%, 33%)
+- Grayish Blue: hsl(201, 11%, 66%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Fonts
+
+- Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
+- Weights: 400, 600
+
+## Icons
+
+For the social icons, you can use the SVGs provided or a font icon library. Some font icon library suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+body {
+    max-width: 100%;
+    /*font-size: 1.8rem;*/
+    /*padding: calc(100vw/12);*/
+    background: no-repeat top center url("../images/bg-header-mobile.png");
+    background-size: 100%;
+    margin: 0 auto;
+    
+     
+     
+}
+
+main {
+    max-width: 1110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 calc(100vw/12);
+    padding-top: 130px;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    text-align: center;
+    
+}
+
+
+h1, h2, h3 {
+    color: hsl(210, 10%, 33%);
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+    line-height: 30px;
+    font-size: 1rem;
+    font-weight: 400;
+    /*padding: 17px 0px 25px 0px;*/
+    margin-bottom: 35px;
+    
+}
+
+h1 {
+    font-size: 1.7rem;
+    margin-bottom: 17px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.logo_header {
+    margin-bottom: 40px;
+}
+
+button {
+    width: 100%;
+    color: white;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1rem;
+    padding: 15px 0;
+    border-radius: 28px;
+    border: none;    
+    border: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 3px solid rgba(0,0,0,0.1);
+    margin: 11px 0;
+    
+}
+
+.ios_button {
+    background-color: hsl(171, 66%, 44%);    
+}
+
+.mac_button {
+    background-color: hsl(233, 100%, 69%);
+    
+}
+
+.download_buttons {
+    width: 100%;
+    /*display: flex;
+    flex-direction: column;*/
+    /*margin-bottom: 148px;*/
+}
+
+#pic_computer img {
+    width: 100%;
+}
+
+#pic_computer {
+    margin-bottom: 35px;
+}
+#p_quick {
+    padding-top : 17px;
+}
+
+#p_sync {
+    padding-top: 11px;
+}
+
+#p_history {
+    padding-top: 15px;
+}
+
+#pic_devices img {
+    width: 100%;
+}
+
+.companies {
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+
+    background-color:hsl(201, 11%, 66%);
+}
+
+
+@media screen and (min-width:700px) {
+    body {
+        background: no-repeat top center url("../images/bg-header-desktop.png");
+        background-size: 100%;
+    }
+
+    .section1 article {
+        margin: 12px 0;
+    }
+    .section1 p {
+        line-height: 30px;
+        font-size: 1.13rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+    .download_buttons button {
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        padding: 15px 0;
+        width: 225px;
+        margin: 0 8px;
+        
+    }
+    .download_buttons {
+        
+        display: inline;
+        text-align: center;
+        
+    }
+    /*
+    .ios_button {
+        float: left;
+        width: 45%;
+    }
+    .mac_button {
+        float: right;
+        width: 45%;
+    }*/
+
+
+    .second_part {        
+        /*gap: 132px;        */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .second_part picture {
+        /*float: left;
+        position: relative;
+        right: 50%;*/
+        justify-self: flex-start;
+        margin-left: -30%;
+        width: 100%;       
+    }
+
+        
+    .snippets {
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+
+    .snippets article {
+        text-align: left;
+        margin: 11px 0;
+    }
+
+    .snippets p {
+        font-size: 0.9rem;
+        padding-top: 8px !important;
+    }
+
+    .companies {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    main footer a {
+        padding: 10px 50px;
+    }
+
+    main article {
+        max-width: 700px;
+    }
+
+    .section1 {
+        margin-bottom: 140px;
+    }
+}
+
