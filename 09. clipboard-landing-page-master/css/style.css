@@ -270,6 +270,12 @@ footer picture img {
     width: 56px;
 }
 
+.container, .links {
+    display: flex;
+    flex-flow: column;
+    gap: 27px;
+}
+
 .social_networks {
     display: flex;
     gap: 40px;
@@ -393,3 +399,79 @@ footer picture img {
         
         margin: 0;
     }
+
+
+
+    /*footer {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(2,1fr);
+
+        grid-template-areas: 
+            ". logo link  link link link link social ."
+            ". . attribution attribution attribution attribution attribution . . ";
+    }
+
+    footer picture {
+        grid-area: logo
+    }
+
+    .social_networks{
+        grid-area: social;
+    }
+
+    .attribution {
+        grid-area: attribution;
+    }
+
+    footer a {
+        grid-area: link;
+    }
+    */
+
+    footer {
+        display: flex;      
+        gap: 0px;
+    }
+
+    .container {
+        max-width: 1110px;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: left;
+        gap: 0px;
+        padding-top: 43px;
+    }
+
+    .container picture {
+        width: 160px;
+        padding: 0;
+        display: flex;
+        flex: 1;
+        flex-basis: 0;
+        align-self: flex-start;
+        
+           
+    }
+
+    .social_networks {
+        width: 160px;
+        
+        gap: 24px;
+       
+        justify-content: flex-end;
+
+    }
+    .links {
+        width: 60%;
+        flex-flow: row wrap;
+        
+    }
+
+    .links a {
+        width: 190px;
+        text-align: left;
+    }
+}
